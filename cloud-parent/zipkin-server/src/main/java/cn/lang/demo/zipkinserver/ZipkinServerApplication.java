@@ -1,4 +1,4 @@
-package cn.sunline.demo.zipkinserver;
+package cn.lang.demo.zipkinserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
