@@ -13,6 +13,7 @@ public class MyTextWebsocketFrameHandler extends SimpleChannelInboundHandler<Tex
         ctx.channel().writeAndFlush(new TextWebSocketFrame("你好："+ LocalDate.now()));
     }
 
+
     @Override
     public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
         System.out.println("客户端"+ctx.channel().id().asLongText()+"连接");
