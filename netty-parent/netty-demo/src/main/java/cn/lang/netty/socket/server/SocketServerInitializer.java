@@ -12,7 +12,6 @@ public class SocketServerInitializer extends ChannelInitializer<SocketChannel> {
 
     @Override
     protected void initChannel(SocketChannel channel) throws Exception {
-        System.out.println(channel.remoteAddress()+" has connected!");
         channel.pipeline()
                 .addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4))
                 .addLast(new LengthFieldPrepender(4))
