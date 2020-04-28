@@ -1,0 +1,41 @@
+server:
+  port: 8080
+spring:
+  shardingsphere:
+    enabled: true
+    datasource:
+      names: ds0,ds1
+      #ds0配置
+      ds0:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=UTC
+        username: root
+        password: lang432105
+      #ds1配置
+      ds1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=UTC
+        username: root
+        password: lang432105
+    sharding:
+      default-database-strategy:
+        inline:
+          sharding-column: order_id
+          algorithm-expression: ds$->{order_id%2}
+      tables:
+        t_order:
+          actual-data-nodes: ds$->{0..1}.t_order_$->{0..2}
+          table-strategy:
+            inline:
+              sharding-column: order_id
+              algorithm-expression: t_order_$->{order_id%3}
+          key-generator:
+            column: order_id
+            type: SNOWFLAKE
+      binding-tables:
+      default-data-source-name:
+    props:
+      sql:
+        show: true

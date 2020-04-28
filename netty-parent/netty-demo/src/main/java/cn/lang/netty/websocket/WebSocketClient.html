@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket客户端</title>
+</head>
+<script type="text/javascript">
+    var socket;
+    if (window.WebSocket){
+        socket = new WebSocket("ws://localhost:8888/ws");
+        socket.onmessage = function (event) {
+            console.log("111")
+            var resp = document.getElementById('respText')
+            resp.value = resp.value+'\n'+event.data;
+        }
+        socket.onopen = function (event) {
+            var resp = document.getElementById('respText')
+            resp.value = resp.value+'\n'+"服务器websocket已连接"
+        }
+        socket.onclose = function (event) {
+            var resp = document.getElementById('respText');
+            resp.value = resp.value+'\n'+"服务器websocket已断开";
+        }
+    }else {
+        alert("不支持websocket");
+    }
+
+    function onClick(message) {
+        if (!window.WebSocket) return;
+        if (socket.readyState==WebSocket.OPEN){
+            socket.send(message);
+        }else {
+            alert("websocket未连接")
+        }
+    }
+</script>
+<body>
+    <div>
+        <form onsubmit="return false;">
+            <textarea style="height: 200px;width: 500px" id="inputText"></textarea>
+            <button id="button" onclick="onClick(document.getElementById('inputText').value)">提交</button>
+            <textarea id="respText" style="height: 200px;width: 500px"></textarea>
+            <button id="resetResp" onclick="javascript: document.getElementById('respText').value=''" >清除</button>
+        </form>
+    </div>
+</body>
+</html>
