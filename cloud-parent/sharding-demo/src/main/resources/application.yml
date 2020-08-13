@@ -6,9 +6,9 @@ spring:
     datasource:
       names: ds0
       ds0:
-        type: com.zaxxer.hikari.HikariDataSource
+        type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        jdbc-url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=UTC
+        url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=UTC
         username: root
         password: lang432105
     sharding:
@@ -18,12 +18,11 @@ spring:
           algorithm-class-name: cn.lang.algo.TestAlgo
       tables:
         t_order:
-          actual-data-nodes: ds0.t_order_$->{0..2}
-#          table-strategy:
-#            inline:
-#              sharding-column: order_id
-#              algorithm-expression: t_order_$->{order_id%3}
+          table-strategy:
+            complex:
+              sharding-columns: order_id
+              algorithm-class-name: cn.lang.algo.TestAlgo
           key-generator:
             column: order_id
             type: SNOWFLAKE
-        t_order_item:
+
