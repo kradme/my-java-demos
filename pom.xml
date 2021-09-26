@@ -8,13 +8,16 @@
     <artifactId>my-java-demos</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
-
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
     <modules>
         <module>netty-parent</module>
         <module>cloud-parent</module>
         <module>algorithm-parent</module>
         <module>test-demo</module>
         <module>juc-parent</module>
+        <module>dubbo-demo</module>
     </modules>
     <dependencies>
         <dependency>

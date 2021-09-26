@@ -19,6 +19,8 @@
         <module>sleuth-demo</module>
         <module>sharding-demo</module>
         <module>spring-dependencies</module>
+        <module>actuator-demo</module>
+        <module>spring-cloud-gateway</module>
     </modules>
 
     <dependencyManagement>
