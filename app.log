@@ -1,0 +1,33 @@
+2022-06-07 11:38:52.848  INFO 22692 --- [main] c.l.HelloHttpServer                      : Starting HelloHttpServer on DESKTOP-4R5EEQL with PID 22692 (E:\codes\GitHub\my-java-demos\cloud-parent\hello-demo\target\classes started by lang in E:\codes\GitHub\my-java-demos)
+2022-06-07 11:38:52.860  INFO 22692 --- [main] c.l.HelloHttpServer                      : No active profile set, falling back to default profiles: default
+2022-06-07 11:38:53.686  INFO 22692 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9001 (http)
+2022-06-07 11:38:53.705  INFO 22692 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-06-07 11:38:53.705  INFO 22692 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2022-06-07 11:38:53.791  INFO 22692 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-06-07 11:38:53.792  INFO 22692 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 894 ms
+2022-06-07 11:38:53.967  INFO 22692 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-07 11:38:54.158  INFO 22692 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9001 (http) with context path ''
+2022-06-07 11:38:54.161  INFO 22692 --- [main] c.l.HelloHttpServer                      : Started HelloHttpServer in 1.827 seconds (JVM running for 4.069)
+2022-06-07 11:40:40.131  INFO 22692 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-07 11:40:45.948  INFO 10948 --- [main] c.l.HelloHttpServer                      : Starting HelloHttpServer on DESKTOP-4R5EEQL with PID 10948 (E:\codes\GitHub\my-java-demos\cloud-parent\hello-demo\target\classes started by lang in E:\codes\GitHub\my-java-demos)
+2022-06-07 11:40:45.960  INFO 10948 --- [main] c.l.HelloHttpServer                      : No active profile set, falling back to default profiles: default
+2022-06-07 11:40:46.726  INFO 10948 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9001 (http)
+2022-06-07 11:40:46.744  INFO 10948 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-06-07 11:40:46.744  INFO 10948 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2022-06-07 11:40:46.835  INFO 10948 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-06-07 11:40:46.835  INFO 10948 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 834 ms
+2022-06-07 11:40:47.038  INFO 10948 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-07 11:40:47.225  INFO 10948 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9001 (http) with context path ''
+2022-06-07 11:40:47.228  INFO 10948 --- [main] c.l.HelloHttpServer                      : Started HelloHttpServer in 1.867 seconds (JVM running for 4.068)
+2022-06-07 11:41:18.843  INFO 10948 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-07 11:41:24.280  INFO 15644 --- [main] c.l.HelloHttpServer                      : Starting HelloHttpServer on DESKTOP-4R5EEQL with PID 15644 (E:\codes\GitHub\my-java-demos\cloud-parent\hello-demo\target\classes started by lang in E:\codes\GitHub\my-java-demos)
+2022-06-07 11:41:24.291  INFO 15644 --- [main] c.l.HelloHttpServer                      : No active profile set, falling back to default profiles: default
+2022-06-07 11:41:25.075  INFO 15644 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9001 (http)
+2022-06-07 11:41:25.094  INFO 15644 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-06-07 11:41:25.094  INFO 15644 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2022-06-07 11:41:25.210  INFO 15644 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-06-07 11:41:25.210  INFO 15644 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 875 ms
+2022-06-07 11:41:25.379  INFO 15644 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-07 11:41:25.579  INFO 15644 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9001 (http) with context path ''
+2022-06-07 11:41:25.582  INFO 15644 --- [main] c.l.HelloHttpServer                      : Started HelloHttpServer in 1.825 seconds (JVM running for 3.839)
+2022-06-07 11:41:35.361  INFO 15644 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'

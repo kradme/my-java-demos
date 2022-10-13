@@ -17,9 +17,6 @@ public class SleuthServer {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SleuthServer.class,
-                "--spring.application.name=backend",
-                "--server.port=9000"
-        );
+        SpringApplication.run(SleuthServer.class, args);
     }
 }

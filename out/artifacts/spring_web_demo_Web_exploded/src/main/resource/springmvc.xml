@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--自动扫描包，让指定包下的注解生效，由IOC容器统一管理-->
+    <context:component-scan base-package="cn.lang"/>
+    <bean class="cn.lang.controller.HelloController"/>
+    <!--用于过滤html、css等资源-->
+    <mvc:default-servlet-handler/>
+    <!--开启注解驱动,等于之前创建的mapping和acpcter-->
+    <mvc:annotation-driven/>
+
+    <!--视图解析器，固定死，所有项目基本一样-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+</beans>
